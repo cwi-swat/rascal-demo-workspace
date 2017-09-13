@@ -1,10 +1,9 @@
 module lang::java::CyclomaticComplexity
 
-import lang::java::jdt::m3::AST;
-import lang::java::jdt::m3::Core;
-import IO;
- 
- data Aap(int z = -776) = aap(int i = 0) | noot();
+import lang::java::jdt::m3::AST;  // for Java trees
+import lang::java::jdt::m3::Core; // for Java tables
+import IO; // for println
+import lang::java::Visualisation;
  
 void init() {
   createM3FromEclipseProject(|project://snakes-and-ladders-java|);
@@ -20,10 +19,14 @@ int calcCC(Statement body) {
         int result = 1;
         visit (body) {
                 case \if(_,_) : result += 1;
+                case \for(_,_,_,_) : result += 1;
+                case \case(_,_) : result += 1;
                 case \if(_,_,_) : result += 1;
                 case \while(_,_) : result += 1;
                 // TODO: add the missing cases
         }
         return result;
 }
+
+
 
