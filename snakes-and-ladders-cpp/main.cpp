@@ -40,6 +40,8 @@ int main(int argc, char **argv) {
        printf("Error: too few arguments, I need a number of tiles\n");
        return -1;
     }
+
+    *p++ = *q++;
     int mapsize = atoi(argv[1]);
     Tile *board[mapsize];
     if (mapsize > MAXSIZE) {

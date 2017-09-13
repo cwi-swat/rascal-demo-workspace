@@ -4,6 +4,8 @@ import lang::java::jdt::m3::AST;
 import lang::java::jdt::m3::Core;
 import IO;
  
+ data Aap(int z = -776) = aap(int i = 0) | noot();
+ 
 void init() {
   createM3FromEclipseProject(|project://snakes-and-ladders-java|);
   println("Initialized name lookup for snakes and ladders");
