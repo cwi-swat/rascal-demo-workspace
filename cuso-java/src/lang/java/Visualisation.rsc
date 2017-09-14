@@ -5,7 +5,7 @@ import shapes::Render; // to view charts
 import analysis::statistics::Frequency; // to compute the distribution
 import Set; // to sort a set into a list
 
-void histogram(rel[&T item, num metric] r, str count="Count", str metric="Metric") {
+void histogram(rel[&T item, num metric] r, str count="Count", str metric="Metric", int width=800, int height=500) {
   map[num metric, int frequency] dist = distribution(r);
   chs = [bar ([<i, dist[i], "<i>"> | i <- sort(dist<0>)], name = "<metric> distribution")];
   
@@ -15,13 +15,13 @@ void histogram(rel[&T item, num metric] r, str count="Count", str metric="Metric
                        hAxis = axis(title=metric, slantedText = true, slantedTextAngle=90),  
                        vAxis = axis(title=count),
                        chartArea_ = chartArea(width="80%", height = "40%"),
-                       bar_ = bar(groupWidth = "10px"),
-                       width=500,
-                       height=500,
+                       bar_ = bar(groupWidth = "80%"),
+                       width=width,
+                       height=height,
                        legend_ = legend(position="top")
                      ), 
-           width = 510, 
-           height = 510);
+           width = width, 
+           height = height);
   render(fig, static=true);
 }
 
