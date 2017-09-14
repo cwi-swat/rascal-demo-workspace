@@ -16,10 +16,10 @@ void registerPico() {
   registerLanguage("Pico", "pico", parsePico);
 }
 
-public loc fac = |project://cuso-pico/src/lang/pico/fac.pico|;
+public loc facExample = |project://cuso-pico/src/lang/pico/fac.pico|;
 
 set[Message] getWarnings(start[Program] prog) 
-  = {warning("Alert!", prog.top.decls@\loc)};
+  = {warning("Alert! this is identifier <i>", i@\loc) | /Id i := prog};
   
 void registerPicoWithBenefits() {
   registerLanguage("Pico", "pico", parsePico);

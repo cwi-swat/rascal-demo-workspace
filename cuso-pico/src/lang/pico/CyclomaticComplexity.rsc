@@ -1,8 +1,6 @@
 module lang::pico::CyclomaticComplexity
 
-import lang::pico::\syntax::Main;
-
- 
+import lang::pico::MyPico;
 
 int cc(start[Program] program) {
    int result = 0;
