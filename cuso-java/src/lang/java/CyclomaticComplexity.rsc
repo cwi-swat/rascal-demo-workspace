@@ -5,9 +5,13 @@ import lang::java::jdt::m3::Core; // for Java tables
 import IO; // for println
 import lang::java::Visualisation;
  
-void init() {
-  createM3FromEclipseProject(|project://snakes-and-ladders-java|);
-  println("Initialized name lookup for snakes and ladders");
+public loc elib = |project://eLib|;
+public loc pdb  = |project://org.eclipse.imp.pdb.values|;
+public loc snakes = |project://snakes-and-ladders-java|;
+
+void init(loc l) {
+  createM3FromEclipseProject(l);
+  println("Initialized name lookup for <l>");
 } 
 
 rel[loc method, int metric] salcc() = projectcc(|project://snakes-and-ladders-java|);
