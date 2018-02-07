@@ -9,6 +9,9 @@ public loc elib = |project://eLib|;
 public loc pdb  = |project://org.eclipse.imp.pdb.values|;
 public loc snakes = |project://snakes-and-ladders-java|;
 
+M3 getModel(loc p) 
+  = createM3FromEclipseProject(p);
+  
 void init(loc l) {
   createM3FromEclipseProject(l);
   println("Initialized name lookup for <l>");

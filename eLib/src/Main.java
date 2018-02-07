@@ -39,7 +39,7 @@
      public static void addUser(String cmd) {
        String args[] = getArgs(cmd);
        if (args.length < 3) return;
-       User user= new User(args[0], args[1], args[2]);
+       User user= new InternalUser(args[0], args[1], args[2], cmd);
        lib.addUser(user);
        System.out.println("Added user: "     + user.getCode() +
        " - "     + user.getName());

@@ -1,6 +1,6 @@
  import java.util.*;
  
- class User {
+ public abstract class User {
 	int userCode;
 	String fullName;
 	String address;
