@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1517992567666_1" label="Rascal" name="Rascal">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/cpp-analysis" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/java-analysis" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pico-extension-and-analysis" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/software-evolution" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1517992590418_2" label="Examples" name="Examples">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eLib" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pacman-cpp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/pdb.values" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/snakes-and-ladders-cpp" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/snakes-and-ladders-java" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1517992474602_0" label="Window Working Set" name="Aggregate for window 1517992474601"/>
+<mruList name="Rascal"/>
+</workingSetManager>
